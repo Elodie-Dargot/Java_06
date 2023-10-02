@@ -1,31 +1,32 @@
 public class Wilder {
-    private String firstname;
+    private String firstName;
     private boolean aware;
 
     public Wilder(String firstname, boolean aware) {
-        this.firstname = firstname;
+        this.firstName = firstname;
         this.aware = false;
-    };
+    }
     public String getFirstName() {
-        return this.firstname = firstname;
-    };
+        return this.firstName = firstName;
+    }
     public void setFirstname(String firstname) {
-        this.firstname = firstname;
-    };
+        this.firstName = firstname;
+    }
 
     public Boolean isAware() {
         return this.aware;
-    };
+    }
     public void setAware(boolean aware) {
         this.aware = aware;
-    };
+    }
+
     public String whoAmI() {
         if (isAware()){
-            return "Je m'appelle " + this.getFirstName() + " et je suis aware";
+            return "Je m'appelle " + this.firstName + " et je suis aware";
         } else {
-            return "Je m'appelle " + this.getFirstName() + " et je ne suis pas aware";
+            return "Je m'appelle " + this.firstName + " et je ne suis pas aware";
         }
 
-    };
+    }
 
 }
